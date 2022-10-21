@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "no-undef": "off",
+    "prettier/prettier": "off",
+    "no-constant-condition": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "extends": ["plugin:react/recommended", "eslint:recommended", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
